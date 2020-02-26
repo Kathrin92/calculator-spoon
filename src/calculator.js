@@ -1,7 +1,9 @@
 "use strict";
 
 const calculatorOutput = document.querySelector(".calculator__output");
-const calculatorInput = document.querySelector(".calculator__input");
+const calculatorInputs = document.querySelectorAll(".calculator__input");
+const calculatorResult = document.querySelector(".calculator__result");
+const calculatorClear = document.querySelector(".calculator__clear");
 
 function add(numberOne, numberTwo) {
   return numberOne + numberTwo;
@@ -15,5 +17,17 @@ function divide(numberOne, numberTwo) {
 function multiply(numberOne, numberTwo) {
   return numberOne * numberTwo;
 }
-const numberOne = Number(calculatorInput.innerTexr);
-calculatorOutput.value = add(calculatorInput.innerText, 33);
+const numberOne = Number(calculatorInputs[5].innerText);
+const numberTwo = Number(calculatorInputs[6].innerText);
+
+function handleClick() {
+  calculatorOutput.value = subtract(numberOne, numberTwo);
+  console.log("clicked");
+}
+calculatorResult.addEventListener("click", handleClick);
+
+function handleResult() {
+  calculatorOutput.value = "";
+  console.log("cleared");
+}
+calculatorClear.addEventListener("click", handleResult);
