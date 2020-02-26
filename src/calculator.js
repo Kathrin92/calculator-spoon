@@ -31,3 +31,18 @@ function handleResult() {
   console.log("cleared");
 }
 calculatorClear.addEventListener("click", handleResult);
+
+//calculatorInputs[0].addEventListener("click", handleInputClick);
+//calculatorInputs[1].addEventListener("click", handleInputClick);
+
+function addInputEventListener(calculatorInput) {
+  console.log("addInputEventListener", calculatorInput.innerText);
+}
+calculatorInputs.forEach(addInputEventListener);
+
+function addInputEventListener(calculatorInput) {
+  calculatorInput.addEventListener("click", writeValueToOutput);
+  function writeValueToOutput() {
+    calculatorOutput.value = calculatorInput.innerText;
+  }
+}
