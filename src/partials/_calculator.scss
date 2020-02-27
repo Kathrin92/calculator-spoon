@@ -17,3 +17,21 @@
   font-size: large;
   border: 5px dotted rgb(160, 157, 157);
 }
+.calculator__operator {
+  flex-basis: calc(100% / 3);
+  background-color: rgb(240, 243, 237);
+  font-size: large;
+  border: 5px dotted rgb(160, 157, 157);
+}
+.calculator__result {
+  flex-basis: calc(100% / 3);
+  background-color: rgb(240, 243, 237);
+  font-size: large;
+  border: 5px dotted rgb(160, 157, 157);
+}
+.calculator__clear {
+  flex-basis: calc(100% / 3);
+  background-color: greenyellow;
+  font-size: large;
+  border: 5px dotted rgb(160, 157, 157);
+}
