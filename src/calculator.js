@@ -1,4 +1,4 @@
-import { add, subtract, divide, multiply } from "./math.js";
+import { add } from "./math.js";
 // import math from "./math.js";
 
 const calculatorOutput = document.querySelector(".calculator__output");
